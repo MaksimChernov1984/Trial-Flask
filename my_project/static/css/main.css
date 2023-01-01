@@ -1,0 +1,16 @@
+body {
+    background: #202020;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+}
+
+a:focus {
+    color: #f0f;
+}
+
+a:hover {
+    color: #f0f;
+}
