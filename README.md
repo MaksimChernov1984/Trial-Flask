@@ -1,2 +1,2 @@
 # Trial-Flask
-I create my experemental web-site for learninig Flask. 
+My learninig of Flask.
