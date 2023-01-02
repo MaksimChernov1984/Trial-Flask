@@ -1,16 +1,50 @@
 body {
-    background: #202020;
+    background: #001;
     color: #fff;
+    font-family: Arial, serif;
+    font-size: 20px;
+    margin: 30px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+.main {
+
 }
 
 a {
     color: #fff;
 }
 
-a:focus {
-    color: #f0f;
+a:hover {
+    color: #001;
+    background: #FA8072;
 }
 
-a:hover {
-    color: #f0f;
+.article-title {
+font-size: 20px;
+width: 700px;
+}
+
+
+.article-intro {
+    font-size: 20px;
+    width: 700px;
+    height: 80px;
+}
+
+.article-text {
+    font-size: 20px;
+    width: 700px;
+    height: 200px;
+}
+
+.article-submit {
+font-size: 20px;
 }

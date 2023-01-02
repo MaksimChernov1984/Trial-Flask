@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Статьи
+{% endblock %}
+
+{% block body %}
+<h1>Статьи</h1>
+<div class="main">
+    {% if articles|length > 0 %}
+        {% for el in articles %}
+        <div>
+            <h2>{{ el.title }}</h2>
+            <p>{{ el.intro }}</p>
+            <p><b>Дата: {{ el.date.date() }}</b></p>
+            <a href="/posts/{{ el.id }}">Детальнее</a>
+        </div>
+        {% endfor %}
+    {% else %}
+    <p>У нас пока нет статей.</p>
+    {% endif %}
+</div>
+{% endblock %}
