@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Статьи SQLite
+{% endblock %}
+
+{% block body %}
+<h1>Статьи SQLite</h1>
+<div class="main">
+    {% if articles|length > 0 %}
+        {% for el in articles %}
+        <div>
+            <h2>{{ el.title }}</h2>
+            <p><b>Дата: {{ el.date.date() }}</b></p>
+            <a href="/sqlite/sqlite-posts/{{ el.id }}">Детальнее</a>
+        </div>
+        {% endfor %}
+    {% else %}
+    <p>У нас пока нет статей SQLite.</p>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Редактирование SQLite
+{% endblock %}
+
+{% block body %}
+<h1>Редактирование статьи SQLite</h1>
+<div class="main"><form method="post">
+    <input class="article-title" type="text" name="title" id="title" value="{{ article.title }}" placeholder="Введите название"><br>
+    <textarea class="article-text" name="text" id="text" placeholder="Введите текст">{{ article.text }}</textarea><br>
+    <input class="article-submit" type="submit" value="Обновить">
+</form></div>
+{% endblock %}
